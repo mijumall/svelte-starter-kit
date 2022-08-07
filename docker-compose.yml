@@ -1,0 +1,28 @@
+services:
+  svelte-app:
+    image: svelte-app
+    build:
+      context: ./dockerimage
+      dockerfile: svelte.Dockerfile
+
+    container_name: svelte-app
+    hostname: svelte-app
+
+    ports:
+      - 8001:8001
+
+    volumes:
+      - ./app:/space/app
+
+    tty: true
+    stdin_open: true
+
+    networks:
+      - frontend
+
+    command: sleep 1000000
+
+networks:
+  frontend:
+    name: frontend
+    driver: bridge
