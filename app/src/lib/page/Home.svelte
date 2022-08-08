@@ -13,6 +13,7 @@
 		<p on:click={e => clickHandler(e)}>home</p>
 		<p on:click={e => clickHandler(e)}>profile</p>
 		<p on:click={e => clickHandler(e)}>settings</p>
+		<p on:click={e => clickHandler(e)}>crud</p>
 	</div>
 </main>
 

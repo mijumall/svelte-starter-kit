@@ -5,6 +5,7 @@ import Home from './lib/page/Home.svelte';
 import Profile from './lib/page/Profile.svelte';
 import Settings from './lib/page/Settings.svelte';
 import Error from './lib/page/ErrorPage.svelte';
+import Crud from './lib/page/Crud.svelte';
 
 export const routerMap: RouterMap = {
 	error: _ =>  {
@@ -31,6 +32,11 @@ export const routerMap: RouterMap = {
 				component: Settings
 			}
 		},
+		'crud': _ => {
+			return {
+				component: Crud
+			}
+		}
 	},
 	initialRoute: 'home'
 }

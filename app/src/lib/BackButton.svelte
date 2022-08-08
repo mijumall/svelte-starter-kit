@@ -22,5 +22,13 @@
 
 		border: 1px solid #393939;
 		border-radius: 50px;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:active {
+			background-color: #777777;
+		}
 	}
 </style>
